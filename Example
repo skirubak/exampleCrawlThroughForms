@@ -1,0 +1,67 @@
+installing GO
+   21  wget https://storage.googleapis.com/golang/go1.10.linux-armv6l.tar.gz
+   25  mkdir -p /usr/local
+   33  ls -ltrh /usr/local/
+   28  tar -tf go1.10.linux-armv6l.tar.gz 
+   39  sudo tar -C /usr/local/ -xzf go1.10.linux-armv6l.tar.gz 
+   40  export PATH=$PATH:/usr/local/go/bin
+   41  cat .profile 
+   42  vi .profile 
+   43  go version
+   46  vi .bashrc 
+
+Collincad DB
+   55  cat CodeFileLists.xls 
+   60  unzip LiteDatabaseCurrent.zip 
+   90  sudo apt-get install mdbtools
+   91  mdb-export AD_Public > collincad.txt
+   92  mdb-export AD_Public.mdb AD_Public > collincad.txt
+
+Building code
+   74  mkdir -p go/src
+   75  cd go/src
+   76  ls
+   77  mkdir nurse
+   78  cd nurse
+   80  vi nurse.go
+  120  go build
+  121  go get github.com/PuerkitoBio/goquery
+  128  go build
+  184  mkdir ~/code/
+  185  mv nurse.go ~/code/
+Doing it for 26 times. But could be short
+  385  vi ~/code/nurse.go;for x in {a..z}; do sed  's/firstname\",\"a\"/firstname\",\"'${x}'\"/' ~/code/nurse.go > nurse.go; go build; ./nurse >> ~/Downloads/nurseA.txt; rm nurse.go; done
+  385  vi ~/code/nurse.go;for x in {a..z}; do sed  's/firstname\",\"a\"/firstname\",\"'${x}'\"/' ~/code/nurse.go > nurse.go; go build; ./nurse >> ~/Downloads/nurseB.txt; rm nurse.go; done
+  385  vi ~/code/nurse.go;for x in {a..z}; do sed  's/firstname\",\"a\"/firstname\",\"'${x}'\"/' ~/code/nurse.go > nurse.go; go build; ./nurse >> ~/Downloads/nurseC.txt; rm nurse.go; done
+  385  vi ~/code/nurse.go;for x in {a..z}; do sed  's/firstname\",\"a\"/firstname\",\"'${x}'\"/' ~/code/nurse.go > nurse.go; go build; ./nurse >> ~/Downloads/nurseD.txt; rm nurse.go; done
+  386  vi ~/code/nurse.go;for x in {a..z}; do sed  's/firstname\",\"a\"/firstname\",\"'${x}'\"/' ~/code/nurse.go > nurse.go; go build; ./nurse >> ~/Downloads/nurseE.txt; rm nurse.go; done
+  387  vi ~/code/nurse.go;for x in {a..z}; do sed  's/firstname\",\"a\"/firstname\",\"'${x}'\"/' ~/code/nurse.go > nurse.go; go build; ./nurse >> ~/Downloads/nurseF.txt; rm nurse.go; done
+  388  vi ~/code/nurse.go;for x in {a..z}; do sed  's/firstname\",\"a\"/firstname\",\"'${x}'\"/' ~/code/nurse.go > nurse.go; go build; ./nurse >> ~/Downloads/nurseG.txt; rm nurse.go; done
+  389  vi ~/code/nurse.go;for x in {a..z}; do sed  's/firstname\",\"a\"/firstname\",\"'${x}'\"/' ~/code/nurse.go > nurse.go; go build; ./nurse >> ~/Downloads/nurseH.txt; rm nurse.go; done
+  390  vi ~/code/nurse.go;for x in {a..z}; do sed  's/firstname\",\"a\"/firstname\",\"'${x}'\"/' ~/code/nurse.go > nurse.go; go build; ./nurse >> ~/Downloads/nurseI.txt; rm nurse.go; done
+  391  vi ~/code/nurse.go;for x in {a..z}; do sed  's/firstname\",\"a\"/firstname\",\"'${x}'\"/' ~/code/nurse.go > nurse.go; go build; ./nurse >> ~/Downloads/nurseJ.txt; rm nurse.go; done
+  392  vi ~/code/nurse.go;for x in {a..z}; do sed  's/firstname\",\"a\"/firstname\",\"'${x}'\"/' ~/code/nurse.go > nurse.go; go build; ./nurse >> ~/Downloads/nurseK.txt; rm nurse.go; done
+  393  vi ~/code/nurse.go;for x in {a..z}; do sed  's/firstname\",\"a\"/firstname\",\"'${x}'\"/' ~/code/nurse.go > nurse.go; go build; ./nurse >> ~/Downloads/nurseL.txt; rm nurse.go; done
+  394  vi ~/code/nurse.go;for x in {a..z}; do sed  's/firstname\",\"a\"/firstname\",\"'${x}'\"/' ~/code/nurse.go > nurse.go; go build; ./nurse >> ~/Downloads/nurseM.txt; rm nurse.go; done
+  395  vi ~/code/nurse.go;for x in {a..z}; do sed  's/firstname\",\"a\"/firstname\",\"'${x}'\"/' ~/code/nurse.go > nurse.go; go build; ./nurse >> ~/Downloads/nurseN.txt; rm nurse.go; done
+  396  vi ~/code/nurse.go;for x in {a..z}; do sed  's/firstname\",\"a\"/firstname\",\"'${x}'\"/' ~/code/nurse.go > nurse.go; go build; ./nurse >> ~/Downloads/nurseO.txt; rm nurse.go; done
+  397  vi ~/code/nurse.go;for x in {a..z}; do sed  's/firstname\",\"a\"/firstname\",\"'${x}'\"/' ~/code/nurse.go > nurse.go; go build; ./nurse >> ~/Downloads/nurseP.txt; rm nurse.go; done
+  398  vi ~/code/nurse.go;for x in {a..z}; do sed  's/firstname\",\"a\"/firstname\",\"'${x}'\"/' ~/code/nurse.go > nurse.go; go build; ./nurse >> ~/Downloads/nurseQ.txt; rm nurse.go; done
+  399  vi ~/code/nurse.go;for x in {a..z}; do sed  's/firstname\",\"a\"/firstname\",\"'${x}'\"/' ~/code/nurse.go > nurse.go; go build; ./nurse >> ~/Downloads/nurseR.txt; rm nurse.go; done
+  400  vi ~/code/nurse.go;for x in {a..z}; do sed  's/firstname\",\"a\"/firstname\",\"'${x}'\"/' ~/code/nurse.go > nurse.go; go build; ./nurse >> ~/Downloads/nurseS.txt; rm nurse.go; done
+  401  vi ~/code/nurse.go;for x in {a..z}; do sed  's/firstname\",\"a\"/firstname\",\"'${x}'\"/' ~/code/nurse.go > nurse.go; go build; ./nurse >> ~/Downloads/nurseT.txt; rm nurse.go; done
+  402  vi ~/code/nurse.go;for x in {a..z}; do sed  's/firstname\",\"a\"/firstname\",\"'${x}'\"/' ~/code/nurse.go > nurse.go; go build; ./nurse >> ~/Downloads/nurseU.txt; rm nurse.go; done
+  403  vi ~/code/nurse.go;for x in {a..z}; do sed  's/firstname\",\"a\"/firstname\",\"'${x}'\"/' ~/code/nurse.go > nurse.go; go build; ./nurse >> ~/Downloads/nurseV.txt; rm nurse.go; done
+  404  vi ~/code/nurse.go;for x in {a..z}; do sed  's/firstname\",\"a\"/firstname\",\"'${x}'\"/' ~/code/nurse.go > nurse.go; go build; ./nurse >> ~/Downloads/nurseW.txt; rm nurse.go; done
+  405  vi ~/code/nurse.go;for x in {a..z}; do sed  's/firstname\",\"a\"/firstname\",\"'${x}'\"/' ~/code/nurse.go > nurse.go; go build; ./nurse >> ~/Downloads/nurseX.txt; rm nurse.go; done
+  406  vi ~/code/nurse.go;for x in {a..z}; do sed  's/firstname\",\"a\"/firstname\",\"'${x}'\"/' ~/code/nurse.go > nurse.go; go build; ./nurse >> ~/Downloads/nurseY.txt; rm nurse.go; done
+  407  vi ~/code/nurse.go;for x in {a..z}; do sed  's/firstname\",\"a\"/firstname\",\"'${x}'\"/' ~/code/nurse.go > nurse.go; go build; ./nurse >> ~/Downloads/nurseZ.txt; rm nurse.go; done
+
+  428  grep -h -E "FRISCO.*19[7-9].*CURRENT" nurse[A-Z].txt > moreThan20
+  431  grep -h -E "PLANO.*19[7-9].*CURRENT" nurse[A-Z].txt > moreThan20Plano
+  528  sudo apt-get install gawk
+
+  573  awk 'BEGIN{FS=","}{print $1}' moreThan20|awk '{print $NF" .* "$1" "}' | while read name; do echo  -n "$name,"; grep -q -E "$name" collincad.txt; if [ $? != 0 ]; then echo "not found"; else grep -E "$name" collincad.txt |awk 'BEGIN{FPAT="([^,]*)|(\"[^\"]+\")";count=0;}{if (count++ != 0){printf(",")}print $3$5","$6","$7","$9","$10","$34","$38","$43","$44","$54","$55","$56","$73","$85}'; fi; done > moreThan20Housing
+  571  awk 'BEGIN{FS=","}{print $1}' moreThan20Plano |awk '{print $NF" .* "$1" "}' | while read name; do echo  -n "$name,"; grep -q -E "$name" collincad.txt; if [ $? != 0 ]; then echo "not found"; else grep -E "$name" collincad.txt |awk 'BEGIN{FPAT="([^,]*)|(\"[^\"]+\")";count=0;}{if (count++ != 0){printf(",")}print $3$5","$6","$7","$9","$10","$34","$38","$43","$44","$54","$55","$56","$73","$85}'; fi; done > moreThan20HousingPlano
+
+
