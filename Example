@@ -17,6 +17,12 @@ Collincad DB
    91  mdb-export AD_Public > collincad.txt
    92  mdb-export AD_Public.mdb AD_Public > collincad.txt
 
+Denten DB
+
+  718  unzip 2018-05-25_005115_APPRAISAL_INFO.TXT.zip 
+ 1014  awk '{print substr($0,1,1932)}' 2018-05-25_005115_APPRAISAL_INFO.TXT > dentonShortOutput.txt
+
+
 Building code
    74  mkdir -p go/src
    75  cd go/src
